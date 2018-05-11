@@ -35,25 +35,10 @@ dependencies {
 
     implementation 'com.android.support:appcompat-v7:26.1.0'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    kapt "com.android.databinding:compiler:3.2.0-alpha10"
-
-    compile 'com.android.support:design:26.1.0'
-
-    implementation "com.android.support:exifinterface:26.1.0"
-
-
-    implementation 'io.reactivex.rxjava2:rxkotlin:2.2.0'
-    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
-
-    implementation('com.theartofdev.edmodo:android-image-cropper:2.4.6', {
-        exclude group: 'com.android.support', module: 'exifinterface'
-    })
-    implementation('com.afollestad.material-dialogs:core:0.9.4.5', {
-        exclude group: 'com.android.support', module: 'support-v13'
-    })
+    kapt "com.android.databinding:compiler:3.1.0-alpha04"
 
     compile "android.arch.lifecycle:extensions:$archLifecycleVersion"
     annotationProcessor "android.arch.lifecycle:extensions:$archLifecycleVersion"
@@ -64,6 +49,35 @@ dependencies {
     implementation "com.google.dagger:dagger-android-support:$dagger_version"
     kapt "com.google.dagger:dagger-compiler:$dagger_version"
     kapt "com.google.dagger:dagger-android-processor:$dagger_version"
+
+
+
+
+//
+//    compile 'com.android.support:design:26.1.0'
+//
+//    implementation "com.android.support:exifinterface:26.1.0"
+//
+//
+//    implementation 'io.reactivex.rxjava2:rxkotlin:2.2.0'
+//    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+//
+//    implementation('com.theartofdev.edmodo:android-image-cropper:2.4.6', {
+//        exclude group: 'com.android.support', module: 'exifinterface'
+//    })
+//    implementation('com.afollestad.material-dialogs:core:0.9.4.5', {
+//        exclude group: 'com.android.support', module: 'support-v13'
+//    })
+//
+//    compile "android.arch.lifecycle:extensions:$archLifecycleVersion"
+//    annotationProcessor "android.arch.lifecycle:extensions:$archLifecycleVersion"
+//
+//    // dagger
+//    implementation "com.google.dagger:dagger:$dagger_version"
+//    implementation "com.google.dagger:dagger-android:$dagger_version"
+//    implementation "com.google.dagger:dagger-android-support:$dagger_version"
+//    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+//    kapt "com.google.dagger:dagger-android-processor:$dagger_version"
 }
 repositories {
     mavenCentral()
