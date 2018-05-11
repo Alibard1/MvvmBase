@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">mvvm</string>
     <string name="loading_text">Loading ..</string>
+    <string name="photos_external_perm_rationale">Without storage permissions, we cannot see your photos</string>
+    <string name="photos_external_perm_rationale_action_positive">OK</string>
+    <string name="photos_external_perm_rationale_action_negative">Cancel</string>
+    <string name="photos_external_perm_denied">We need storage permission to view your photos</string>
+    <string name="photos_external_perm_denied_action_enable">Enable</string>
+    <string name="photo_take">Take Photo</string>
+    <string name="photo_choose">Choose Photo</string>
 </resources>
