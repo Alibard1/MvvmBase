@@ -49,7 +49,7 @@ abstract class BaseBindFragment<T : ViewDataBinding, V : BaseViewModel<*>> : Fra
         return mRootView
     }
 
-    override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         performDataBinding()
     }
