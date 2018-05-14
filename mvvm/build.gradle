@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 27
@@ -38,7 +39,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    kapt "com.android.databinding:compiler:3.2.0-alpha10"
+    annotationProcessor  "com.android.databinding:compiler:3.2.0-alpha10"
 
     implementation "android.arch.lifecycle:extensions:$archLifecycleVersion"
     annotationProcessor "android.arch.lifecycle:extensions:$archLifecycleVersion"
