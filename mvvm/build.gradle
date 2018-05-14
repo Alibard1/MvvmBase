@@ -2,14 +2,14 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
 
 
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 26
-        buildToolsVersion "26.0.1"
+        targetSdkVersion 27
+        buildToolsVersion "27.0.3"
         versionCode 1
         versionName "1.0"
 
@@ -33,14 +33,14 @@ ext.dagger_version = "2.13"
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    kapt "com.android.databinding:compiler:3.1.0-alpha04"
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    kapt "com.android.databinding:compiler:3.2.0-alpha10"
 
-    compile "android.arch.lifecycle:extensions:$archLifecycleVersion"
+    implementation "android.arch.lifecycle:extensions:$archLifecycleVersion"
     annotationProcessor "android.arch.lifecycle:extensions:$archLifecycleVersion"
 
     // dagger
